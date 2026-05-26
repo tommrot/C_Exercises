@@ -2,7 +2,7 @@
 #define NODE_H
 
 typedef struct Node {
-    int value;
+    void *value;
     struct Node *next; 
 } Node;
 
