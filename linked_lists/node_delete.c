@@ -10,14 +10,14 @@ void node_delete(Node **head, Node *node_to_delete){
     Node *next = node_to_delete->next;
     if (previous == NULL){
         *head = next;
-        next->prev = NULL; 
-        return;
+        if (next != NULL){
+            next->prev = NULL; 
+        }
     } else if (next == NULL){
         previous->next = NULL;
-        return;
     } else {
         previous->next = next;
         next->prev = previous;
     }
-    free(node_delete);
+    free(node_to_delete);
 }
