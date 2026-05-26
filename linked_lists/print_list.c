@@ -21,5 +21,24 @@ void print_list(Node *head){
 
 
 void print_node (Node *node){
+    if (node == NULL){
+        printf("node is empty\n");
+    }
+    if (node->value == NULL){
+        printf("value is empty\n");
+    }
+    printf("%d \n", *(int*)(node->value));
+}
 
+
+void print_last (Node *head){
+    if (head == NULL){
+        printf("list is empty\n");
+        return;
+    }
+    Node *current = head;
+    while (current->next != NULL){
+        current = current->next;
+    }
+    printf("%d\n", *(int*)(current->value));
 }
