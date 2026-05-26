@@ -42,3 +42,4 @@ void print_last (Node *head){
     }
     printf("%d\n", *(int*)(current->value));
 }
+
