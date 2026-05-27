@@ -38,7 +38,7 @@ void list_append(Node **head, void *value){
     new->next = NULL;
 
     if (*head == NULL){
-        *head = new;
+        *head = new;   // address of head is equal to address of new
         return;
     }
     Node *current = *head;
