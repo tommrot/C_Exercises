@@ -19,6 +19,5 @@ int main(void){
         } else if (ch == 'r'){
             print_reverse(head);
         }
-
     }    
 }
