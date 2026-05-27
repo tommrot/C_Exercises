@@ -4,5 +4,6 @@
 #include "item.h"
 
 void print_items(Item *inventory, int counter);
+void quick_sort(Item *inventory, int counter);
 
 #endif
